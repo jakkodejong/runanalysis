@@ -1,4 +1,4 @@
-# Recipe for data tidying as in 'run_analysis.R'
+data# Recipe for data tidying as in 'run_analysis.R'
 
 The used dataset was obtained from UCI (reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.)
 
@@ -6,6 +6,14 @@ The used dataset was obtained from UCI (reference: Davide Anguita, Alessandro Gh
 
 * R-version x64 3.3.2
 * used packages: data.table
+
+## File output:
+
+The R-script 'run_analysis.R' outputs two data frames:
+
+* 'data_total' contains a tidy dataset with the test and train data combined, with added columns for subject_id and activity_label.
+
+* 'data_av' contains a tidy dataset with the average data of 'data_total', averaged per unique combination of subject_id and activity_label.
 
 ## Recipe:
 
